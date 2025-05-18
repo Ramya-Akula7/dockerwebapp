@@ -6,7 +6,8 @@ services:
    image: ramyaakula7/myrepo:dbimage
    ports:
      - "3306:3306"
-
+   volume:
+     - db-data:/var/lib/mysql
  application:
    container_name: appcontainer
    image: ramyaakula7/myrepo:appimage
