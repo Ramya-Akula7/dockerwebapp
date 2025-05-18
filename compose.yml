@@ -17,5 +17,5 @@ services:
      - "devopsdb"
      
      
- volumes:
+volumes:
   db-data:
