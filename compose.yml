@@ -2,11 +2,13 @@
 version: "3"
 services:
  devopsdb:
+   container_name: dbcontainer
    image: ramyaakula7/myrepo:dbimage
    ports:
      - "3306:3306"
 
  application:
+   container_name: dbcontainer
    image: ramyaakula7/myrepo:appimage
    ports:
      - "1234:8080"
