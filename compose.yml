@@ -6,7 +6,7 @@ services:
    image: ramyaakula7/myrepo:dbimage
    ports:
      - "3306:3306"
-   volume:
+   volumes:
      - db-data:/var/lib/mysql
  application:
    container_name: appcontainer
@@ -15,3 +15,5 @@ services:
      - "1234:8080"
    depends_on:
      - "devopsdb"
+volumes:
+  db-data:
