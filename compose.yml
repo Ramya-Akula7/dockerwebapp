@@ -8,7 +8,7 @@ services:
      - "3306:3306"
 
  application:
-   container_name: dbcontainer
+   container_name: appcontainer
    image: ramyaakula7/myrepo:appimage
    ports:
      - "1234:8080"
