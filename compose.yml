@@ -15,5 +15,7 @@ services:
      - "1234:8080"
    depends_on:
      - "devopsdb"
-volumes:
+     
+     
+ volumes:
   db-data:
